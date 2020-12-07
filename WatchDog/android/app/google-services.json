@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "678924775161",
+    "firebase_url": "https://watchdog-b2c02.firebaseio.com",
+    "project_id": "watchdog-b2c02",
+    "storage_bucket": "watchdog-b2c02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678924775161:android:fbe1933fae945c10e7fc28",
+        "android_client_info": {
+          "package_name": "com.example.flutter_login_page_ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678924775161-7an8rvb631ivtsimtejhuld326iu1k92.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDht61Wz-rfvcRX4c-RCXjVt-dJHteUI1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678924775161-7an8rvb631ivtsimtejhuld326iu1k92.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678924775161-qr33o6b02detb8c3tisdotm9lh5he3mk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.watchdog"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
