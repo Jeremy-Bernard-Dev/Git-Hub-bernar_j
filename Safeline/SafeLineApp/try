@@ -1,0 +1,116 @@
+import React, {useState} from 'react'
+import { View, Text, Image, StyleSheet, TextInput, ScrollView, Button  } from 'react-native'
+import StarRating from 'react-native-star-rating';
+import illustration_shop from '../assets/img/Illustrations/shop.png'
+
+function LaisserAvis() {
+    const [text, setText] = React.useState('');
+    const [stars, setStars] = React.useState(0);
+    const [star, setStar] = React.useState(0);
+
+    return (
+        <ScrollView style={styles.scroll}>
+            <View style={styles.container}>
+                <Image style={styles.img} source={illustration_shop}/>
+                <Text style={styles.nomMagasin}>Franprix</Text>
+                    <Text style={styles.part}>Nombre de personne</Text>
+                    <View style={styles.starsGrading}>
+                        <StarRating
+                            disabled={false}
+                            maxStars={5}
+                            rating={stars}
+                            selectedStar={(rating) => setStars(rating)}
+                            fullStarColor={'#ffda00'}
+                            emptyStarColor='#005593'
+                            starSize={30}
+                            ratingBackgroundColor='white'
+                        />
+                    </View>
+
+                    <Text style={styles.part}>Respect des règles de sécurité</Text>
+                    <View style={styles.starsGrading}>
+                        <StarRating
+                            disabled={false}
+                            maxStars={5}
+                            rating={star}
+                            selectedStar={(rating) => setStar(rating)}
+                            fullStarColor={'#ffda00'}
+                            emptyStarColor='#005593'
+                            starSize={30}
+                        />
+                    </View>
+                <Text style={styles.part}>Laisser un commentaire</Text>
+                    <TextInput
+                        style={styles.textArea}
+                        onChangeText={value => setText(value)}
+                        multiline={true}
+                        numberOfLines={4}
+                        value={text}
+                    />
+                    <Button title='Envoyer'/>
+            </View>
+        </ScrollView>
+    );
+}
+
+const styles = StyleSheet.create({
+    scroll: {
+        width:'100%',
+        height:'100%',
+        backgroundColor:'#4e9be2'
+    },
+    part: {
+        width:'100%',
+        backgroundColor:'white',
+        height:28,
+        color:'#4e9be2',
+        textAlign:'center',
+        fontSize:20
+    },
+    flexRow: {
+        display:'flex',
+        flexDirection:'row',
+        flexWrap:'wrap'
+    },
+    img: {
+        width: '50%',
+        height:150,
+        resizeMode:'contain',
+        marginTop:50
+    },
+    container: {
+        backgroundColor:'#4e9be2',
+        width:'100%',
+        height:'100%',
+        alignItems:'center',
+        paddingBottom:30
+    },
+    nomMagasin: {
+        fontSize: 30,
+        textAlign: "center",
+        paddingLeft:30,
+        paddingRight:30,
+        color:'white',
+        paddingBottom:30,
+        fontWeight: 'bold'
+    },
+    starsGrading: {
+        marginTop:10,
+        marginBottom:20,
+        marginLeft: 10,
+    },
+    textArea: {
+        marginTop:15,
+        width: '90%',
+        height: 100,
+        borderColor: '#005593',
+        borderWidth: 1,
+        textAlignVertical: 'top',
+        color:'#B2DEFF',
+        fontWeight:'bold',
+        padding:10,
+        marginBottom:20
+    }
+  });
+
+export default LaisserAvis;

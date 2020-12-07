@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "SafeLine",
+    "slug": "SafeLine",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/img/Logos/logo.png",
+    "splash": {
+      "image": "./assets/img/Logos/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#2DA4FF"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    }
+  }
+}
