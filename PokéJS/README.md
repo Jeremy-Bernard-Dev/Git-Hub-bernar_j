@@ -5,9 +5,10 @@ Site web connecté à l'API pokémon et qui de pokédex il y a différente fonct
 #Démarrer
 
 Pour démarrer le projet, tout d'abord vous devait d'avoir d'installer sur votre ordinateur node.js ensuite
-à la racine du projets fait c'est deux commande:
+à la racine du projets fait c'est deux commande sur votre terminal:
 
 npm install
+
 npm start
 
 Le projet est lancé !!!
