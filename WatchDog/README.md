@@ -1,16 +1,16 @@
-# flutter_login_page_ui
+#Watchdog
 
-A new Flutter project.
+Watchdog est une application Mobile de rencontre pour pocesseur d'animaux de compagnie faite en Flutter et son back-end avec Firebase.
 
-## Getting Started
+#Démarrer
 
-This project is a starting point for a Flutter application.
+Pour démarrer le projet, tout d'abord vous devait d'avoir d'installer sur votre ordinateur flutter
+puis demarrer un emulateur sur votre pc et à la racine du projet faite c'est commandes sur votre terminal:
 
-A few resources to get you started if this is your first Flutter project:
+flutter pub get
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+flutter run
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+ou encore plus simple si vous avez le plugin Flutter sur Visual Studio Code faite juste start debugging en sélectionnant main.dart.
+
+Le projet est lancé !!!

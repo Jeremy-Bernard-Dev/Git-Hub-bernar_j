@@ -167,7 +167,7 @@ public class LoginActivity extends AppCompatActivity {
                 .setLenient()
                 .create();
 
-        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.1.14:8000/")
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://127.0.0.1:8000/")
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
 
